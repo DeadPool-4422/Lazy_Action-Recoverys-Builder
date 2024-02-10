@@ -131,7 +131,7 @@ jobs:
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         set -e
-        lunch ${{ github.event.inputs.DEVICE_NAME_MK }}-eng && make clean && mka ${{ github.event.inputs.BUILD_TARGET }}image
+        lunch ${{ github.event.inputs.DEVICE_NAME_MK }}-eng && make clean && mka ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
 
     - name: Set Build Date # For Build Date Info, currently using Asia/Manila
       run: |
