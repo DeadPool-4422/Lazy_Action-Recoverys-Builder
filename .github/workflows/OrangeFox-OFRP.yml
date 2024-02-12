@@ -35,7 +35,7 @@ on:
       DEVICE_NAME_MK:
         description: 'Specify your Codename .mk filename.'
         required: true
-        default: 'omni_guacamole'
+        default: 'twrp_guacamole'
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true
