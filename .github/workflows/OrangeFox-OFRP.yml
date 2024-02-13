@@ -27,15 +27,15 @@ on:
       DEVICE_PATH:
         description: 'Specify your device path.'
         required: true
-        default: 'device/oneplus/guacamole'
+        default: 'device/oneplus/guacamolev2'
       DEVICE_NAME:
         description: 'Specify your Device Codename.'
         required: true
-        default: 'guacamole'
+        default: 'guacamolev2'
       DEVICE_NAME_MK:
         description: 'Specify your Codename .mk filename.'
         required: true
-        default: 'twrp_guacamole'
+        default: 'twrp_guacamolev2'
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true
